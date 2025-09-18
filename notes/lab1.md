@@ -43,3 +43,25 @@
 - They have the same diameter
 - The have different color, XPOSITION & YPOSITION values
 - Circle has diameter option, Square has size
+
+
+## Q2.1 
+
+- 5 
+- 1 
+- They were created when the draw method was called on the picture class
+
+
+## Q2.2 
+
+- .changeColor();
+- .setBlackAndWhite();
+- The method '.setBlackAndWhite();' calls the '.changeColor();' method on each shape in the picture
+
+
+## Q2.3 
+
+- The picture is created in colour then after a while changes to black and white
+- Yes
+
+

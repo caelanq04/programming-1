@@ -1,7 +1,13 @@
 public class Main {
 
     public static void main(String[] args) {
-	    System.out.println("Hello, World!");
+
+        Picture picture1 = new Picture();
+        picture1.draw();
+        pause();
+        picture1.sunset();
+//        pause();
+//        picture1.setBlackAndWhite();
 
     }
 

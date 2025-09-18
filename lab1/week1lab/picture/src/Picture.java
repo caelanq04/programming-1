@@ -14,6 +14,7 @@ public class Picture
 {
     private Square wall;
     private Square window;
+    private Square door;
     private Triangle roof;
     private Circle sun;
 
@@ -41,6 +42,12 @@ public class Picture
         window.moveVertical(100);
         window.makeVisible();
 
+        door = new Square();
+        door.changeColor("black");
+        door.moveHorizontal(35);
+        door.moveVertical(150);
+        door.makeVisible();
+
         roof = new Triangle();
         roof.changeSize(50, 140);
         roof.moveHorizontal(60);
@@ -48,11 +55,19 @@ public class Picture
         roof.makeVisible();
 
         sun = new Circle();
-        sun.changeColor("yellow");
+        sun.changeColor("blue");
         sun.moveHorizontal(180);
         sun.moveVertical(-10);
         sun.changeSize(60);
         sun.makeVisible();
+    }
+
+    /**
+     * Makes the sun move down and off-screen (sun setting)
+     */
+    public void sunset()
+    {
+        sun.slowMoveVertical(500);
     }
 
     /**
